@@ -21,7 +21,7 @@
 </head>
 
 <body id="page-top" class="index">
-
+<?php include_once("analyticstracking.php") ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">

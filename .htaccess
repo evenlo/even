@@ -1,0 +1,10 @@
+RewriteEngine on
+# Enforce NO www
+RewriteCond %{HTTP_HOST} ^www.even\.pw [NC]
+RewriteRule ^(.*)$ http://even.pw/$1 [L,R=301]
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond $1 !^(index\.php|images|swf|uploads|js|css|assets|robots\.txt|$)
+    RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
